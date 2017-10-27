@@ -1,0 +1,38 @@
+1. 
+
+The first 10 pad numbers are
+
+	1 1 1 2 2 3 4 5 7 9
+
+I tried the test case of (pad 10000), and the program returns 
+
+	*** - Program stack overflow. RESET
+
+Because to calculate pad(10000) we need too many function calls. Since function calls
+need allocated space in stack, it may not be possible for this machine/clisp interpreter to handle this problem and cause
+stack overflow.  
+
+2. The first 10 sum numbers are
+
+	0 0 0 1 1 2 3 4 6 8
+
+From observation I can see SUM(n) = PAD(n) -1
+
+3.
+
+The returned results of given test cases are: 
+
+	 > (ANON ’42)
+     ?
+     > (ANON ’FOO)
+     ?
+     > (ANON ’(((L E) F) T))
+     (((? ?) ?) ?)
+     > (ANON ’(5 FOO 3.1 -0.2))
+     (? ? ? ?)
+     > (ANON ’(1 (FOO 3.1) -0.2))
+     (? (? ?) ?)
+     > (ANON ’(((1 2) (FOO 3.1)) (BAR -0.2)))
+     (((? ?) (? ?)) (? ?))
+     > (ANON ’(R (I (G (H T)))))
+     (? (? (? (? ?))))

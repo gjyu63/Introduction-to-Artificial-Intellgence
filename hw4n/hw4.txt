@@ -1,0 +1,29 @@
+hw4.txt
+Guo, Jiayu
+304-773-262
+
+1. In graph 1, when the number of colors is 3, it is unsatisfiable
+
+when the number of colors is 4, it is satisfiable. 
+
+2. 
+
+The result shows that the minimum number of colors should be applied is 4, which also indicates that 
+when the number of colors is greater than 4, it will be still satisfied.
+
+So we can use 4 colors to solve that graph.
+
+A possible solution of graph 1 is
+
+node - color
+
+       1 - 1
+       2 - 2
+       3 - 1
+       4 - 4
+       5 - 3 
+       6 - 2
+       7 - 3
+
+
+3. In graph 2, when # of colors = 3,4,5,6,7, it is not satisfiable; when # >= 8, it will be satisfiable
